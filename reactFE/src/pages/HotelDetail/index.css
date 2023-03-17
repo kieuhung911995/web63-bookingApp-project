@@ -1,0 +1,13 @@
+.hotel-detail {
+  padding: 0 104px;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  width: 166px;
+  height: 145px;
+  border: 1px solid #8dd3bb;
+  border-radius: 12px;
+  padding: 16px;
+}

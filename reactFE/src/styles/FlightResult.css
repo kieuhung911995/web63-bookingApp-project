@@ -1,0 +1,130 @@
+.FlightResult {
+  background-color: #fafbfc;
+  font-family: "Montserrat";
+}
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate-book-rating {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.rate-book-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 32px;
+
+  /* Mint Green */
+
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+.rate-book-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  /* Mint Green */
+
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+.rate-book-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 48px;
+
+  /* Mint Green */
+
+  background: #8dd3bb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.FlightResult-ticket {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.FlightResult-ticket-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+
+  width: 246px;
+  height: 309px;
+
+  background: #ebf6f2;
+}
+.FlightResult-ticket-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+
+  width: 610px;
+  height: 80px;
+
+  /* Mint Green */
+
+  background: #8dd3bb;
+}
+.info-header-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.info-header-user-avatar {
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.FlightResult-ticket-info-main {
+  width: 610px;
+  height: 182px;
+  padding: 24px;
+
+  /* Neutrals */
+
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.info-main-plane {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+}
+.detail-plane {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 8px;
+}
+.info-main-code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

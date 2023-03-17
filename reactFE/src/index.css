@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.content {
+  background-color: #fafafa;
+}
+
+.content-border-box {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 16px;
+  padding: 32px 24px;
+}
+
+.content-green-border-box {
+  background: #ffffff;
+  border: 1px solid #8dd3bb;
+  border-radius: 8px;
+  padding: 16px 32px;
+}
+
+.content-green-background-box {
+  background: #8dd3bb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.logo-border-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+}
+
+/* General Text Style */
+.montserrat-regular {
+  font-family: "MontserratRegular";
+  color: #112211;
+}
+
+.montserrat-regular-slamon {
+  font-family: "MontserratRegular";
+  color: #ff8682;
+}
+
+.montserrat-regular-12px {
+  font-family: "MontserratRegular";
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.montserrat-regular-16px {
+  font-family: "MontserratRegular";
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.montserrat-medium {
+  font-family: "MontserratMedium";
+  color: #112211;
+}
+
+.montserrat-medium-12px {
+  font-family: "MontserratMedium";
+  font-size: 12px;
+  color: #112211;
+}
+
+.montserrat-medium-16px {
+  font-family: "MontserratMedium";
+  font-size: 16px;
+  color: #112211;
+}
+
+.montserrat-medium-20px {
+  font-family: "MontserratMedium";
+  font-size: 20px;
+  line-height: 25px;
+  color: #112211;
+}
+
+.montserrat-semibold {
+  font-family: "MontserratSemiBold";
+  color: #112211;
+}
+
+.montserrat-semibold-12px {
+  font-family: "MontserratSemiBold";
+  color: #112211;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.montserrat-semibold-16px {
+  font-family: "MontserratSemiBold";
+  font-size: 16px;
+  color: #112211;
+  line-height: 20px;
+}
+
+.montserrat-semibold-20px {
+  font-family: "MontserratSemiBold";
+  font-size: 20px;
+  color: #112211;
+}
+
+.montserrat-semibold-16px-slamon {
+  font-family: "MontserratSemiBold";
+  font-size: 16px;
+  color: #ff8682;
+}
+
+.montserrat-semibold-24px {
+  font-family: "MontserratSemiBold";
+  font-size: 24px;
+}
+
+.montserrat-semibold-32px {
+  font-family: "MontserratSemiBold";
+  font-size: 32px;
+  color: #112211;
+  line-height: 40px;
+}
+
+.montserrat-bold {
+  font-family: "MontserratBold";
+}
+
+.montserrat-bold-16px {
+  font-family: "MontserratBold";
+  font-size: 16px;
+}
+
+.montserrat-bold-slamon {
+  font-family: "MontserratBold";
+  color: #ff8682;
+}
+
+.montserrat-bold-12px {
+  font-family: "MontserratBold";
+  font-size: 12px;
+}
+
+.montserrat-bold-24px {
+  font-family: "MontserratBold";
+  font-size: 24px;
+}
+
+.montserrat-bold-24px-slamon {
+  font-family: "MontserratBold";
+  font-size: 24px;
+  color: #ff8682;
+}
+
+.trade-gothic-bold {
+  font-family: "TradeGothicBold";
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.trade-gothic-bold-20px {
+  font-family: "TradeGothicBold";
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.trade-gothic-bold-24px {
+  font-family: "TradeGothicBold";
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.trade-gothic-lt-extended {
+  font-family: "TradeGothicLTExtended";
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold {
+  font-family: "TradeGothicLTExtendedBold";
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-16px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 16px;
+  line-height: 20px;
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-20px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 20px;
+  line-height: 25px;
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-24px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 24px;
+  line-height: 30px;
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-32px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 32px;
+  line-height: 40px;
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-40px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 40px;
+  line-height: 50px;
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-44px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 44px;
+  line-height: 54px;
+  color: #112211;
+}
+
+.trade-gothic-lt-extended-bold-50px {
+  font-family: "TradeGothicLTExtendedBold";
+  font-size: 50px;
+  line-height: 63px;
+  color: #112211;
+}
+
+/* General Flex Style */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-between-align-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* General Button Style */
+.large-button {
+  background-color: #8dd3bb;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.small-button {
+  width: 40px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8dd3bb;
+}
+
+.small-button-for-icons {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ebf6f2;
+  border-radius: 4px;
+}
+
+.medium-button {
+  height: 40px;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+
+.button-background-filled {
+  height: 48px;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.button-for-icons {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+
+.big-button-green-border {
+  height: 56px;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+
+.big-button-background-filled {
+  height: 56px;
+  background-color: #8dd3bb;
+  border-radius: 4px;
+}
+
+.big-button-for-icons {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}

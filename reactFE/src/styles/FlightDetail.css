@@ -1,0 +1,133 @@
+.FlightDetail {
+  background-color: #fafbfc;
+  font-family: "Montserrat";
+}
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rate-book-rating {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.rate-book-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 32px;
+
+  /* Mint Green */
+
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+.rate-book-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  /* Mint Green */
+
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+}
+.rate-book-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  height: 48px;
+
+  /* Mint Green */
+
+  background: #8dd3bb;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.airline-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.airline-class-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.airline-class-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.airline-class-policies {
+  margin-top: 30px;
+  padding: 16px;
+
+  width: 97%;
+  height: 102px;
+
+  background: rgba(141, 211, 187, 0.6);
+  border-radius: 8px;
+}
+.airline-class-policies-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 300px;
+}
+.airlineTicket {
+  padding: 32px 24px;
+
+  width: 96%;
+  height: 287px;
+
+  /* Neutrals */
+
+  background: #ffffff;
+  /* Cards Shadow */
+
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 12px;
+}
+.airlineTicket-departureTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.airlineTicket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.airlineTicket-header-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.airlineTicket-main {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+}
+.airlineTicket-main-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}

@@ -1,0 +1,101 @@
+/* Auto layout */
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 21px 104px;
+  /* Neutrals */
+
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.flight-stay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.login-signUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.findFlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.findFlight:hover {
+  cursor: pointer;
+}
+.findStay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.findStay:hover {
+  cursor: pointer;
+}
+.login {
+  cursor: pointer;
+}
+.signUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 48px;
+  color: white;
+  background: #112211;
+  border-radius: 8px;
+}
+.signUp:hover {
+  cursor: pointer;
+}
+.golobe-logo {
+  width: 200px;
+}
+.favorite-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+}
+.favorite-user-avatar {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ff8682;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}

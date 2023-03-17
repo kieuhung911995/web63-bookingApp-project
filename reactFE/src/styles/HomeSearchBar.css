@@ -1,0 +1,40 @@
+.HomeSearchBar {
+  padding: 0px 24px 48px;
+
+  position: absolute;
+  width: 1100px;
+  height: 230px;
+  left: 101px;
+  top: 460px;
+
+  /* Neutrals */
+
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(141, 211, 187, 0.15);
+  border-radius: 16px;
+}
+
+.large-button {
+  background-color: #8dd3bb;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  justify-content: center;
+  font-weight: 500;
+  column-gap: 5px;
+  font-size: 14px;
+}
+
+.hidden-button {
+  width: 130px;
+  padding: 0;
+  height: 48px;
+  color: black;
+  font-size: 14px;
+}
+
+.show-result-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
