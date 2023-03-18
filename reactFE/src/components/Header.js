@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { setIsLogin } from "../redux/loginSlice";
-import { useNavigate, createSearchParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown } from "antd";
@@ -35,7 +35,7 @@ const Header = ({ params }) => {
     navigate("/account");
   };
   const handleFindFlight = () => {
-    navigate("/flight/list");
+    navigate("/flight/search");
   };
   const handleNavigate = (value) => {
     if (value === "home") {
@@ -49,10 +49,7 @@ const Header = ({ params }) => {
     }
   };
   const handleFindStay = () => {
-    navigate({
-      pathname: "/hotel-listing",
-      search: `?${createSearchParams(params)}`,
-    });
+    navigate("/hotel-search");
   };
   const items = [
     {

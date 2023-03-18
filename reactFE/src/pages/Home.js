@@ -62,10 +62,10 @@ const Home = ({ params }) => {
   const navigate = useNavigate();
   const handleNavigate = (link) => {
     if (link === "flight") {
-      navigate("/flight/list");
+      navigate("/flight/search");
     }
     if (link === "stay") {
-      navigate("/flight/search");
+      navigate("/hotel-search");
     }
   };
 
