@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const request = axios.create({
-  baseURL: "http://localhost:3001/",
+  baseURL: "http://bookingweb-nodejs.vercel.app/",
 });
 
 let retry = 0;
