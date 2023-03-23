@@ -26,9 +26,7 @@ const FlightFilter = () => {
   useEffect(() => {
     const getDatas = async () => {
       try {
-        const response = await request.get(
-          "http://localhost:3001/flight/airline"
-        );
+        const response = await request.get("/flight/airline");
         setDatas(response.data);
         setIsLoading(false);
       } catch (error) {

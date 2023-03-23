@@ -21,10 +21,9 @@ const FlightResult = () => {
     const getDatas = async () => {
       const accessToken = localStorage.getItem("accessToken");
       try {
-        const response = await request.get(
-          `http://localhost:3001/book/${params.bookId}`,
-          { headers: { Authorization: `Bearer ${accessToken}` } }
-        );
+        const response = await request.get(`/book/${params.bookId}`, {
+          headers: { Authorization: `Bearer ${accessToken}` },
+        });
 
         setDatas(response.data);
         setIsLoading(false);

@@ -22,7 +22,7 @@ const FlightBook = () => {
     const accessToken = localStorage.getItem("accessToken");
     try {
       const response = await request.post(
-        "http://localhost:3001/book",
+        "/book",
         { flightId: params.flightId },
         { headers: { Authorization: `Bearer ${accessToken}` } }
       );
@@ -59,9 +59,7 @@ const FlightBook = () => {
   useEffect(() => {
     const getDatas = async () => {
       try {
-        const response = await request.get(
-          `http://localhost:3001/flight/${params.flightId}`
-        );
+        const response = await request.get(`/flight/${params.flightId}`);
         setDatas(response.data);
         setIsLoading(false);
       } catch (error) {

@@ -16,10 +16,7 @@ const Login = () => {
 
   const onFinish = async (values) => {
     try {
-      const response = await request.post(
-        "http://localhost:3001/login",
-        values
-      );
+      const response = await request.post("/login", values);
       if (response.status === 200 && response.data) {
         localStorage.setItem("accessToken", response.data.accessToken);
         localStorage.setItem("refreshToken", response.data.refreshToken);

@@ -72,7 +72,7 @@ const FlightListTicket = () => {
     const getDatas = async () => {
       try {
         dispatch(setIsSearch(false)); //dat len dau de neu call api loi van set lai isSearch
-        const response = await request.get("http://localhost:3001/flight", {
+        const response = await request.get("/flight", {
           params: params,
         });
         setTotal(response.data[0].metadata[0]?.total);

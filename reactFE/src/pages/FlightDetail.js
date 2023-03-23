@@ -1,6 +1,6 @@
 import { Col, Row, Spin } from "antd";
 import { useState, useEffect } from "react";
-import axios from "axios";
+import request from "../utils/request";
 import { useParams, useNavigate } from "react-router-dom";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
@@ -35,9 +35,7 @@ const FlightDetail = () => {
   useEffect(() => {
     const getDatas = async () => {
       try {
-        const response = await axios.get(
-          `http://localhost:3001/flight/${params.flightId}`
-        );
+        const response = await request.get(`/flight/${params.flightId}`);
         setDatas(response.data);
         setIsLoading(false);
       } catch (error) {

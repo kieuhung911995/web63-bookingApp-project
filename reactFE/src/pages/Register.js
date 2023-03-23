@@ -20,10 +20,7 @@ const Register = () => {
   const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
-      const response = await request.post(
-        "http://localhost:3001/register",
-        values
-      );
+      const response = await request.post("/register", values);
       alert("signup success");
       navigate("/login");
     } catch (error) {

@@ -67,7 +67,7 @@ export function FlightSearchInput() {
   useEffect(() => {
     const getDatas = async () => {
       try {
-        const response = await request.get("http://localhost:3001/flight/city");
+        const response = await request.get("/flight/city");
         setDatas(response.data);
         setIsLoading(false);
       } catch (error) {

@@ -1,4 +1,4 @@
-import axios from "axios";
+import request from "../../../utils/request";
 import React, { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import {
@@ -20,8 +20,8 @@ const ResultFilter = ({ queryParams }) => {
 
   useEffect(() => {
     const getAmenities = () => {
-      axios
-        .get("http://localhost:3001/api/stay/amenity")
+      request
+        .get("/api/stay/amenity")
         .then((result) => {
           setAmenities(result.data);
         })

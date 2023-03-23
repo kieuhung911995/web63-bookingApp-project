@@ -1,6 +1,6 @@
 import { Row, Col, Divider } from "antd";
 import { useSearchParams } from "react-router-dom";
-import axios from "axios";
+import request from "../../utils/request";
 import { useState, useEffect } from "react";
 import React from "react";
 
@@ -38,9 +38,9 @@ const HotelListing = ({ params, setParams }) => {
     const getHotelData = () => {
       if (Object.keys(queryParams).length !== 0) {
         setIsLoading(true);
-        axios({
+        request({
           method: "get",
-          url: `http://localhost:3001/api/stay/room`,
+          url: `/api/stay/room`,
           params: queryParams,
         })
           .then((result) => {

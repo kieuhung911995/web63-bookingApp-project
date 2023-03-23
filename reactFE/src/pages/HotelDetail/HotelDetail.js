@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import request from "../../utils/request";
 import { LoadingOutlined } from "@ant-design/icons";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -18,8 +18,8 @@ const HotelDetail = () => {
   const urlParams = useParams();
   useEffect(() => {
     setIsLoading(true);
-    axios
-      .get(`http://localhost:3001/api/stay/hotel/${urlParams.hotelId}`)
+    request
+      .get(`/api/stay/hotel/${urlParams.hotelId}`)
       .then((result) => {
         setHotelDetail(result.data);
       })

@@ -12,7 +12,7 @@ const HistoryFlight = () => {
     const getDatas = async () => {
       const accessToken = localStorage.getItem("accessToken");
       try {
-        const response = await request.get("http://localhost:3001/history", {
+        const response = await request.get("/history", {
           headers: { Authorization: `Bearer ${accessToken}` },
         });
         setDatas(response.data);

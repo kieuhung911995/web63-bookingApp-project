@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import request from "../../utils/request";
 import { useState, useEffect } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
 import { Button, Row, Col, DatePicker, Select, InputNumber } from "antd";
@@ -19,8 +19,8 @@ const StaySearch = ({ params, setParams }) => {
   // Listing Destination Options in Search Bar
   const [destinationOptions, setDestinationOptions] = useState([]);
   useEffect(() => {
-    axios
-      .get("http://localhost:3001/api/stay/destination")
+    request
+      .get("/api/stay/destination")
       .then((result) => {
         setDestinationOptions(
           result.data.map((element) => {

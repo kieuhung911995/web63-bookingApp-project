@@ -20,7 +20,7 @@ const Header = ({ params }) => {
     const accessToken = localStorage.getItem("accessToken");
     const refreshToken = localStorage.getItem("refreshToken");
     try {
-      await request.post("http://localhost:3001/logout", {
+      await request.post("/logout", {
         accessToken: accessToken,
         refreshToken: refreshToken,
       });
