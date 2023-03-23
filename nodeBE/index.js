@@ -36,6 +36,14 @@ mongoose.connect(
 app.use(morgan("combined"));
 app.use(express.json());
 app.use(cors());
+app.options("*", (req, res) => {
+  res
+    .writeHead(200, "", {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "OPTIONS",
+    })
+    .end();
+});
 app.use("/public", express.static("public"));
 app.use("/api/image", image);
 app.use("/api/stay/amenity", amenity);
